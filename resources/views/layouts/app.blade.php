@@ -23,6 +23,25 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
+            <div class="btn-group">
+  <button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-justify" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+</svg>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="menus">Menús</a>
+    <a class="dropdown-item" href="snacks">Snacks</a>
+    <a class="dropdown-item" href="preferencias">Preferencias</a>
+    <a class="dropdown-item" href="buzons">Buzones</a>
+    <a class="dropdown-item" href="campuses">Campus</a>
+    <a class="dropdown-item" href="users">Usuarios</a>
+    <a class="dropdown-item" href="bars">Bares</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="/espe/public">Ver inicio</a>
+    <div class="dropdown-divider"></div>
+  </div>
+</div>
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>

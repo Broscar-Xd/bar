@@ -2,19 +2,6 @@
 @section('content')
 <body background="https://cdn.pixabay.com/photo/2016/07/03/02/49/sushi-1494195_1280.jpg">
 <div class="container">
-<div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="menus">Menús</a>
-    <a class="dropdown-item" href="snacks">Snacks</a>
-    <a class="dropdown-item" href="preferencias">Preferencias</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Separated link</a>
-  </div>
-</div>
-
     @if(session('status'))
     <div class="alert alert-success">
         {{ session('status') }}
