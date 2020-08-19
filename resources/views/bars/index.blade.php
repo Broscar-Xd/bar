@@ -2,7 +2,8 @@
 @section('content')
 <body background="https://cdn.pixabay.com/photo/2016/07/03/02/49/sushi-1494195_1280.jpg">
 <div class="container">
-
+    
+    </div>
     @if(session('status'))
     <div class="alert alert-success">
         {{ session('status') }}
@@ -16,8 +17,9 @@
                 </div>
             </div>
         </>
+    
     <div class="card-body">
-
+    
     <table class="table table-bordered table-success">
         @if(count($bars))
         <thead class="bg-dark">

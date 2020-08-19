@@ -73,6 +73,10 @@
     @extends('layouts.app')
     @section('content')
         <div class="container">
+            <div>
+                <a href="https://www.facebook.com"><img src="https://image.flaticon.com/icons/svg/889/889102.svg" alt="Face" width="3%"></a>
+                <a href="https://twitter.com/home"><img src="https://image.flaticon.com/icons/svg/889/889147.svg" alt="Twitter" width="3%"></a>
+            </div>
              @if(session('status'))
             <div class="alert alert-success">
             {{ session('status') }}
