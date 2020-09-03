@@ -129,7 +129,7 @@
         <tbody>
             @foreach ($menus as $menu) 
             <tr>
-                <td>{{$menu->bar->campus->nombre}}<br> </td>
+                <td>{{$menu->bar->campuses->nombre}}<br> </td>
                 <td>{{$menu->bar->nombre}}<br> </td>  
                 <td>{{$menu->nombre}}<br> </td>
                 <td>{{$menu->precio}}<br> </td>
