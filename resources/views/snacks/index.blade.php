@@ -72,7 +72,7 @@
                                             @method('DELETE')
                                         </form>
                                     </td>
-                                    <td>{{$snack->bar->nombre}}</td>
+                                    
                                     <td>{{$snack->nombre}}</td>
                                     <td>{{$snack->precio}}</td>
                                     <td>{{$snack->disponible}}</td>
