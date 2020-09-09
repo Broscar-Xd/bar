@@ -15,8 +15,9 @@ class UserController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        $request->user()->authorizeRoles(['admin']);
         $users = User::all();
         return view('users.index', compact('users'));
     }
