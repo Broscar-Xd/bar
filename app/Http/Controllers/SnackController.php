@@ -17,7 +17,7 @@ class SnackController extends Controller
 
     public function index(Request $request)
     {
-        $request->user()->authorizeRoles('admin');
+        $request->user()->authorizeRoles(['admin','dueño']);
         $snacks = Snack::all();
         return view('snacks.index', compact('snacks'));
     }

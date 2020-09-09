@@ -15,8 +15,9 @@ class PreferenciaController extends Controller
         $this->middleware('auth');
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        $request->user()->authorizeRoles(['admin','dueño','usuario']);
         $preferencias = Preferencia::all();
         return view('preferencias.index', compact('preferencias'));
     }
