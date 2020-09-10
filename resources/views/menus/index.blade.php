@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <body background="https://cdn.pixabay.com/photo/2014/12/21/23/56/hamburger-576419_1280.png">
     <div class="container">
 
@@ -24,7 +27,7 @@
                                 <tr>
                                     <th style="color:white;">Opciones</th>
 
-                                    
+                                    <td style="color:white;">Bar</td>
                                     <td style="color:white;">Nombre</td>
 
                                     <td style="color:white;">Precio</td>
@@ -74,7 +77,7 @@
                                             @method('DELETE')
                                         </form>
                                     </td>
-
+                                    <td>{{$menu->bar->nombre}}</td>
                                     <td>{{$menu->nombre}}</td>
                                     <td>{{$menu->precio}}</td>
                                     <td>{{$menu->disponible}}</td>
